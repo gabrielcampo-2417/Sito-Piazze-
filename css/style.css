@@ -11,11 +11,16 @@ body {
 main {
   flex: 1;
 }
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -112,6 +117,19 @@ h2 {
 .card-media{
   height:140px;
   background:#E5E7EB;
+}
+
+.detail-hero img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-content{
@@ -241,6 +259,58 @@ h2 {
   border-radius:12px;
   padding:18px;
   background:#fff;
+}
+
+/* ===== ATTIVITA ===== */
+
+.activities-section h2 {
+  font-size: 32px;
+}
+
+/* GRID */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+/* CARD */
+.activity-card {
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.3s;
+  height: fit-content;
+}
+
+.activity-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.activity-content {
+  padding: 18px;
+}
+
+.meta {
+    color: #7a7a7a;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* LINK ATTIVO MENU */
+nav a.active {
+  color: #2563eb;
+  font-weight: 600;
 }
 
 @media (max-width: 900px){
